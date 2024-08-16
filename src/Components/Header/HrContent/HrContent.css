@@ -9,3 +9,22 @@ img {
 .h_25 {
   height: 25%;
 }
+
+.px_btn_main {
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+}
+
+@media only screen and (max-width:992.80px) {
+  .mt_lg{
+    margin-top: 2rem !important;
+  }
+  .px_lg {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+  }
+  .px_btn_main {
+    padding-right: 1.2rem !important;
+    padding-left: 1.2rem !important;
+  }
+}
