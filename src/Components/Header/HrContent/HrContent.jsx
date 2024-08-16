@@ -30,7 +30,11 @@ function HrContent() {
           </div>
         </div>
       </div>
-      <div className='h_25'></div>
+      <div className='h_25'>
+        <div>
+          
+        </div>
+      </div>
     </div>
   )
 }
