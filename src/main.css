@@ -1,3 +1,42 @@
+:root {
+  --bg_basic: #01B0FF;
+  --color_100:#fff;
+  --color_50:#ffffffa9;
+}
+
+@font-face {
+  font-family: fa-font;
+  font-style: normal;
+  src: url('../public/fonts/fa/Dirooz-FD.ttf');
+}
+
+body {
+  font-family: fa-font !important;
+}
+
+.bg_basic {
+  background-color: var(--bg_basic) !important;
+  border: 2px solid var(--bg_basic) !important;
+}
+
+.bg_basic_outline {
+  background-color: transparen !important;
+  border: 2px solid var(--bg_basic) !important;
+  color: var(--bg_basic) !important;
+}
+
+.text_color_basic {
+  color: var(--bg_basic) !important;
+}
+
 .bg_main {
-  background-color: #000000;
+  background-color: #000000 !important;
+}
+
+.color_white_100 {
+  color: var(--color_100) !important;
+}
+
+.color_white_50 {
+  color: var(--color_50) !important;
 }

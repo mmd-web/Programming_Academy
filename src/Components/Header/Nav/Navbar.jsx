@@ -7,7 +7,7 @@ import Close from '../../CloseBtn/Close';
 function Navbar() {
   return (
     <nav className='navbar navbar-expand-lg container mx-auto'>
-      <div className='bg-dark rounded-5 py-4 text-light w-100'>
+      <div className='bg-dark rounded-5 py-4 color_white_100 w-100'>
         <div className="row w-100">
           <div className="col-lg-10 col-8">
             <div className='d-flex flex-row justify-content-lg-center justify-content-start align-items-center'>
