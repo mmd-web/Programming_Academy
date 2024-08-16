@@ -2,6 +2,7 @@
   --bg_basic: #01B0FF;
   --color_100:#fff;
   --color_50:#ffffffa9;
+  --color_black:#000000;
 }
 
 @font-face {
@@ -24,6 +25,11 @@ body {
   border: 2px solid var(--bg_basic) !important;
   color: var(--bg_basic) !important;
 }
+.bg_basic_outline:hover {
+  background-color: var(--bg_basic) !important;
+  border: 2px solid var(--bg_basic) !important;
+  color: var(--color_100) !important;
+}
 
 .text_color_basic {
   color: var(--bg_basic) !important;
@@ -33,10 +39,18 @@ body {
   background-color: #000000 !important;
 }
 
+.text_color_balck {
+  color: var(--color_black);
+}
+
 .color_white_100 {
   color: var(--color_100) !important;
 }
 
 .color_white_50 {
   color: var(--color_50) !important;
+}
+
+.shadow_text:hover {
+  color: var(--bg_basic) !important;
 }
