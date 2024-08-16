@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function NavItems() {
   return (
-    <div>
+    <div className='d-lg-flex d-none'>
       <ul className='navbar-nav column-gap-5 flex-row-reverse'>
         <li className='nav-item'>
           <a href="#" className='nav-link text-light'>صفحه اصلی</a>
