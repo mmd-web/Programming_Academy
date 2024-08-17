@@ -16,6 +16,10 @@ body {
   font-family: fa-font !important;
 }
 
+.w_main_100 {
+  width: max-content;
+}
+
 .bg_basic {
   background-color: var(--bg_basic) !important;
   border: 2px solid var(--bg_basic) !important;
@@ -24,12 +28,12 @@ body {
 .bg_basic_outline {
   background-color: transparen !important;
   border: 2px solid var(--bg_basic) !important;
-  color: var(--bg_basic) !important;
+  color: var(--color_100) !important;
 }
 .bg_basic_outline:hover {
   background-color: var(--bg_basic) !important;
   border: 2px solid var(--bg_basic) !important;
-  color: var(--color_100) !important;
+  color: var(--color_black) !important;
 }
 
 .text_color_basic {
