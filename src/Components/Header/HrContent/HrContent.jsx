@@ -31,18 +31,18 @@ function HrContent() {
           </div>
         </div>
       </div>
-      <div className='h_25'>
-        <div className='row h_maxContent'>
-          <div className="col-3 h-100">
+      <div className='h_25 pb_items_box'>
+        <div className='row h_maxContent row-gap-3'>
+          <div className="col-xl-3 col-md-6 col-12 h-100">
             <CardHr images="../public/images/hrImage/itemsImg/img_6640886661f153a221d.webp" count="6" colorText="#19BEEF" title="hello" ></CardHr>
           </div>
-          <div className="col-3 h-100">
+          <div className="col-xl-3 col-md-6 col-12 h-100">
             <CardHr images="../public/images/hrImage/itemsImg/img_8471886661f151ced59.webp" count="10" colorText="#0ED3A3" title="hello" ></CardHr>
           </div>
-          <div className="col-3 h-100">
+          <div className="col-xl-3 col-md-6 col-12 h-100">
             <CardHr images="../public/images/hrImage/itemsImg/img_9057316661f155dd207.webp" count="30" colorText="#FFD701" title="hello" ></CardHr>
           </div>
-          <div className="col-3 h-100">
+          <div className="col-xl-3 col-md-6 col-12 h-100">
             <CardHr images="../public/images/hrImage/itemsImg/img_9081336661f14eddb67.webp" count="15" colorText="#7F1FFF" title="hello" ></CardHr>
           </div>
         </div>
