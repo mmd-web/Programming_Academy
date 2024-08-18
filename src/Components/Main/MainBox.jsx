@@ -3,7 +3,7 @@ import Course from './Course/Course';
 
 function MainBox() {
   return (
-    <div>
+    <div className='container'>
       <Course></Course>
     </div>
   )

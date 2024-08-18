@@ -5,3 +5,8 @@
 .w_card_course {
   width: 18rem;
 }
+
+.str_price_main {
+  color: #ffffffa9;
+  text-decoration: line-through;
+}

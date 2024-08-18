@@ -1,4 +1,5 @@
 import React from 'react'
+import Badge from './Badge/Badge';
 
 function CardCourse({ ...props }) {
   return (
@@ -12,8 +13,14 @@ function CardCourse({ ...props }) {
           <div className='w-100 d-flex justify-content-start align-items-center'>
             <span className='color_white_100 fs-6'>{props.stars}</span>
           </div>
-          <div className='w-100 d-flex justify-content-start align-items-center'>
-            <span className='color_white_100 fs-4'> {props.priceMain} <span className='fs-6'>تومان</span></span>
+          <div className='d-flex justify-content-start align-items-start flex-row'>
+            <div className='h-100 d-flex justify-content-start align-items-end flex-column' style={{width:'40%'}}>
+              <span className='color_white_100 fs-4' dir='rtl'>{props.discountPrice} <span className='fs-6'>تومان</span></span>
+              <span className='fs-5 str_price_main' dir='rtl'>{props.priceMain} </span>
+            </div>
+            <div className='h-100 d-flex justify-content-end align-items-center mt-2' style={{width:'60%'}}>
+              <Badge percentage={props.percentageDiscount} ></Badge>
+            </div>
           </div>
         </div>
       </div>
