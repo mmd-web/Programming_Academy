@@ -3,10 +3,20 @@
 }
 
 .w_card_course {
-  width: 18rem;
+  width: 306px;
 }
 
 .str_price_main {
   color: #ffffffa9;
   text-decoration: line-through;
+}
+
+.w_icon_star {
+  width: 15px;
+}
+
+@media only screen and (max-width:1280.80px) {
+  .w_card_course {
+    width: 242px;
+  }
 }
