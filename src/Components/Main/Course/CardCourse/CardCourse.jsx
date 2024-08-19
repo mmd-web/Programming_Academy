@@ -5,7 +5,9 @@ function CardCourse({ ...props }) {
   return (
     <div>
       <div className="card w-100 bg_main_two">
-        <img src={props.srcImg} className="card-img-top" alt="..." />
+        <div className='w_img_box'>
+          <img src={props.srcImg} className="card-img-top w-100 h-100 object-fit-cover" alt="..." />
+        </div>
         <div className="card-body py-4 w-100 d-flex row-gap-4 flex-column">
           <div className='w-100 d-flex justify-content-end align-items-center'>
             <h5 className="card-title fs-6 fw-bold color_white_100">{props.title}</h5>
