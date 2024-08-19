@@ -1,5 +1,6 @@
 import React from 'react'
 import CardCourse from './CardCourse/CardCourse';
+import TitlesMain from '../TitlesMain/TitlesMain';
 import './Course.css'
 
 let valuesCardCourse = [
@@ -16,9 +17,7 @@ let valuesCardCourse = [
 function Course() {
   return (
     <div className='mt-5 pb_items_box'>
-      <div className='d-flex justify-content-center align-items-center'>
-        <span className='fs-1 text_color_basic fw-bold'>دوره های آکادمی</span>
-      </div>
+      <TitlesMain title="دوره های آکادمی"></TitlesMain>
       <div className='py-3 mt-4 d-flex justify-content-center align-items-center flex-column row-gap-3'>
         {/* <CardCourse {...valuesCardCourse[0]}></CardCourse> */}
         <div className="row">
