@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from './logo';
+import Logo from './Logo';
 import NavItems from './NavItems';
 import Offcanvas from './Offcanvas';
 import Close from '../../CloseBtn/Close';
