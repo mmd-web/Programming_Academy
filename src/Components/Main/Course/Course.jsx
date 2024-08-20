@@ -16,7 +16,7 @@ let valuesCardCourse = [
 
 function Course() {
   return (
-    <div className='mt-5 pb_items_box'>
+    <div className='py-5'>
       <TitlesMain title="دوره های آکادمی"></TitlesMain>
       <div className='py-3 mt-4 d-flex justify-content-center align-items-center flex-column row-gap-3'>
         {/* <CardCourse {...valuesCardCourse[0]}></CardCourse> */}
