@@ -1,0 +1,47 @@
+.w_intBox {
+  width: 100% !important;
+  height: 15rem !important;
+}
+
+.fs_1_991 {
+  font-size: 2.5rem !important;
+}
+
+.px_intBox {
+  padding-right: 1rem !important;
+}
+
+@media only screen and (max-width: 1280.80px) {
+  .px_intBox {
+    padding-right: 2rem !important;
+  }
+}
+ 
+@media only screen and (max-width: 991.800px) {
+  .w_intBox {
+    width: 100% !important;
+    height: 10rem !important;
+  }
+
+  .fs_1_991 {
+    font-size: calc(1.2rem + 1vw) !important;
+  }
+}
+
+@media only screen and (max-width: 768.80px) {
+  .w_intBox {
+    width: 100% !important;
+    height: 10rem !important;
+  }
+  .fs_1_991 {
+    font-size: calc(1.4rem + 1vw) !important;
+  }
+}
+
+/* @media only screen and (max-width: 576.80px) {
+  .fs_1_991 {
+    font-size: calc(1.4rem + 1vw) !important;
+  }
+} */
+
+/* 576px */
