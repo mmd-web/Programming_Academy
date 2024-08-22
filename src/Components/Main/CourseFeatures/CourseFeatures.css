@@ -1,0 +1,27 @@
+.fs_subTitle_feature {
+  font-size: 1rem !important;
+}
+
+.s_box_img_feature {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media only screen and (max-width:1199.80px) {
+  .fs_subTitle_feature {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media only screen and (max-width: 768.80px) {
+  .s_box_img_feature {
+    width: 35% !important;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 576.80px) {
+  .fs_subTitle_feature {
+    font-size: 0.9rem !important;
+  }
+}

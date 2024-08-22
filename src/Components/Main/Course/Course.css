@@ -20,7 +20,7 @@
   height: 13rem !important;
 }
 
-@media only screen and (max-width:1280.80px) {
+@media only screen and (max-width:1199.80px) {
   .w_card_course {
     width: 242px;
   }
