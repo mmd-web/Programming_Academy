@@ -5,7 +5,7 @@ function IntBox({...props}) {
   return (
     <a href='#' className='w_intBox text-decoration-none rounded-4 overflow-hidden d-flex justify-content-center align-items-center flex-row' style={{backgroundImage:`linear-gradient(to right, ${props.colorOne} , ${props.colorTwo})`}}>
       <div className='h-100 d-flex justify-content-center align-items-center' style={{width:"40%"}}>
-        <div className='w-75 h-75'>
+        <div style={{width:'80%'}}>
           <img src={props.srclink} className='w-100 h-100 object-fit-cover' alt="" />
         </div>
       </div>
