@@ -4,6 +4,7 @@ import Introduction from './Introduction/Introduction';
 import CourseFeatures from './CourseFeatures/CourseFeatures';
 import CountDocuments from './CountDocuments/CountDocuments';
 import Articles from './Articles/Articles';
+import Connection from './Connection/Connection';
 
 function MainBox() {
   return (
@@ -13,6 +14,7 @@ function MainBox() {
       <CourseFeatures></CourseFeatures>
       <CountDocuments></CountDocuments>
       <Articles></Articles>
+      <Connection></Connection>
     </div>
   )
 }
