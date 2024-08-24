@@ -3,7 +3,7 @@ import Badge from './Badge/Badge';
 
 function CardCourse({ ...props }) {
   return (
-    <div>
+    <a href='#' className='text-decoration-none'>
       <div className="card w-100 bg_main_two">
         <div className='w_img_box'>
           <img src={props.srcImg} className="card-img-top w-100 h-100 object-fit-cover" alt="..." />
@@ -33,7 +33,7 @@ function CardCourse({ ...props }) {
           </div>
         </div>
       </div>
-    </div>
+    </a>
   )
 }
 
