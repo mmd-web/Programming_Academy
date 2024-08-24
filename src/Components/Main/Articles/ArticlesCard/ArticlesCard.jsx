@@ -5,7 +5,7 @@ export default function ArticlesCard({ ...props }) {
   return (
     <div>
       <a href='#' className="card w-100 bg_main_two">
-        <div className='w_img_box'>
+        <div className='w_img_box overflow-hidden'>
           <img src={props.srclink} className="card-img-top w-100 h-100 object-fit-cover" alt="..." />
         </div>
         <div className="card-body py-4 w-100 d-flex row-gap-4 flex-column">
