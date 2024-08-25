@@ -1,6 +1,7 @@
 import React from 'react'
 import TitlesMain from '../TitlesMain/TitlesMain'
 import MediaIcon from './MediaIcon/MediaIcon'
+import AddressBox from './AddressBox/AddressBox'
 import './Connection.css'
 
 export default function Connection() {
@@ -8,7 +9,7 @@ export default function Connection() {
     <div className='w-100 h-100 py-5 mt-3'>
       <TitlesMain title="ارتباط با ما"></TitlesMain>
       <div className='w-100 h-100 mt-5'>
-        <div className="row">
+        <div className="row row-gap-lg-0 row-gap-4">
           <div className="col-lg-6 col-12">
             <div className='w-100 h-100 d-flex align-items-end'>
               <div className='w-100 bg_main_two rounded-4 py-4 px-4 d-flex justify-content-lg-between align-items-lg-end flex-lg-row flex-column justify-content-end align-items-center row-gap-lg-0 row-gap-sm-5 row-gap-3 w_box_media'>
@@ -29,7 +30,11 @@ export default function Connection() {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 col-12 bg-light">hello</div>
+          <div className="col-lg-6 col-12 d-flex flex-column row-gap-4 justify-content-end">
+            <AddressBox srclink="src/assets/images/icon/IconMedia/telegram-icon.png" title="تهران تهران خیابان دارا پلاک ۲"></AddressBox>
+            <AddressBox srclink="src/assets/images/icon/IconMedia/telegram-icon.png" title="تهران تهران خیابان دارا پلاک ۲"></AddressBox>
+            <AddressBox srclink="src/assets/images/icon/IconMedia/telegram-icon.png" title="تهران تهران خیابان دارا پلاک ۲"></AddressBox>
+          </div>
         </div>
       </div>
     </div>
