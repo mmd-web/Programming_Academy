@@ -5,7 +5,6 @@ import CourseFeatures from './CourseFeatures/CourseFeatures';
 import CountDocuments from './CountDocuments/CountDocuments';
 import Articles from './Articles/Articles';
 import Connection from './Connection/Connection';
-import Footer from '../Footer/Footer';
 
 function MainBox() {
   return (
@@ -16,7 +15,6 @@ function MainBox() {
       <CountDocuments></CountDocuments>
       <Articles></Articles>
       <Connection></Connection>
-      <Footer></Footer>
     </div>
   )
 }
