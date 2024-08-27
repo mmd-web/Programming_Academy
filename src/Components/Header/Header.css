@@ -5,3 +5,8 @@ header {
 .w_nav_90 {
   width: 90% !important;
 }
+
+.stroke_icon {
+  -webkit-text-stroke: 2px green; 
+  /* -webkit-text-stroke-color: 2px green; */
+}
