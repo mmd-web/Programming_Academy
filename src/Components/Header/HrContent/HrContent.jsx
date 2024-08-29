@@ -16,7 +16,7 @@ function HrContent() {
         <div className="row h-100">
           <div className="col-lg-6 col-12 d-flex d-lg-none justify-content-center align-items-center">
             <div>
-              <img src="src/assets/images/hrImage/img_517335666206237e4d9.webp" width={100} alt="" />
+              <img src={GetImg(ImgHr)} width={100} alt="" />
             </div>
           </div>
           <div className="col-lg-6 col-12 justify-content-center mt_lg px_lg align-items-end d-flex flex-column">
