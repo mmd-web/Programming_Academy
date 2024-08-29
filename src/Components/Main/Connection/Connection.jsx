@@ -8,6 +8,7 @@ import './Connection.css'
 import IconMedia1 from '../../../assets/images/icon/IconMedia/telegram-icon.png';
 import IconMedia2 from '../../../assets/images/icon/IconMedia/ig-instagram-icon.png';
 import IconMedia3 from '../../../assets/images/icon/IconMedia/linkedin-app-icon.png';
+import ConnectionImg from '../../../assets/images/ConnectionImg/img_8989166661eb35db767.webp';
 
 export default function Connection() {
   return (
@@ -19,7 +20,7 @@ export default function Connection() {
             <div className='w-100 h-100 d-flex align-items-end'>
               <div className='w-100 bg_main_two rounded-4 py-4 px-4 d-flex justify-content-lg-between align-items-lg-end flex-lg-row flex-column justify-content-end align-items-center row-gap-lg-0 row-gap-sm-5 row-gap-3 w_box_media'>
                 <div className='w_box_img_media'>
-                  <img src="src/assets/images/ConnectionImg/img_8989166661eb35db767.webp" className='w-100' alt="" />
+                  <img src={GetImg(ConnectionImg)} className='w-100' alt="" />
                 </div>
                 <div className='w_box_text_media h-100 d-flex flex-column row-gap-4 justify-content-center' dir='rtl'>
                   <div className='d-flex flex-column row-gap-4 ps-3 h-100'>
