@@ -1,5 +1,9 @@
 import React from 'react'
+import GetImg from '../GetImg/GetImg.jsx'
 import './Footer.css'
+import TrustLogo1 from '../../assets/images/TrustLogo/img_39561266633efd6095e.webp';
+import TrustLogo2 from '../../assets/images/TrustLogo/img_61917266633eff972a7.webp';
+import TrustLogo3 from '../../assets/images/TrustLogo/img_84225566633efbcda11.webp';
 
 export default function Footer() {
   return (
@@ -14,9 +18,9 @@ export default function Footer() {
           </div>
           <div className="col-lg-6 col-12 d-flex align-items-center">
             <div className='w-25 d-flex column-gap-4'>
-              <img src="src/assets/images/TrustLogo/img_39561266633efd6095e.webp" style={{width:'100%'}} alt="" />
-              <img src="src/assets/images/TrustLogo/img_61917266633eff972a7.webp" style={{width:'100%'}} alt="" />
-              <img src="src/assets/images/TrustLogo/img_84225566633efbcda11.webp" style={{width:'100%'}} alt="" />
+              <img src={GetImg(TrustLogo1)} style={{width:'100%'}} alt="" />
+              <img src={GetImg(TrustLogo2)} style={{width:'100%'}} alt="" />
+              <img src={GetImg(TrustLogo3)} style={{width:'100%'}} alt="" />
             </div>
           </div>
         </div>

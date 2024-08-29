@@ -2,7 +2,12 @@ import React from 'react'
 import TitlesMain from '../TitlesMain/TitlesMain'
 import MediaIcon from './MediaIcon/MediaIcon'
 import AddressBox from './AddressBox/AddressBox'
+import GetImg from '../../GetImg/GetImg.jsx';
 import './Connection.css'
+
+import IconMedia1 from '../../../assets/images/icon/IconMedia/telegram-icon.png';
+import IconMedia2 from '../../../assets/images/icon/IconMedia/ig-instagram-icon.png';
+import IconMedia3 from '../../../assets/images/icon/IconMedia/linkedin-app-icon.png';
 
 export default function Connection() {
   return (
@@ -22,18 +27,18 @@ export default function Connection() {
                     <span className='color_white_50 lh-lg fs_Connection_subtel'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</span>
                   </div>
                   <div className='d-flex flex-row column-gap-3 h-100'>
-                    <MediaIcon srclink="src/assets/images/icon/IconMedia/telegram-icon.png"></MediaIcon>
-                    <MediaIcon srclink="src/assets/images/icon/IconMedia/ig-instagram-icon.png"></MediaIcon>
-                    <MediaIcon srclink="src/assets/images/icon/IconMedia/linkedin-app-icon.png"></MediaIcon>
+                    <MediaIcon srclink={GetImg(IconMedia1)}></MediaIcon>
+                    <MediaIcon srclink={GetImg(IconMedia2)}></MediaIcon>
+                    <MediaIcon srclink={GetImg(IconMedia3)}></MediaIcon>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-lg-6 col-12 d-flex flex-column row-gap-4 justify-content-end">
-            <AddressBox srclink="src/assets/images/icon/IconMedia/telegram-icon.png" title="تهران تهران خیابان دارا پلاک ۲"></AddressBox>
-            <AddressBox srclink="src/assets/images/icon/IconMedia/telegram-icon.png" title="تهران تهران خیابان دارا پلاک ۲"></AddressBox>
-            <AddressBox srclink="src/assets/images/icon/IconMedia/telegram-icon.png" title="تهران تهران خیابان دارا پلاک ۲"></AddressBox>
+            <AddressBox srclink={GetImg(IconMedia1)} title="تهران تهران خیابان دارا پلاک ۲"></AddressBox>
+            <AddressBox srclink={GetImg(IconMedia2)} title="تهران تهران خیابان دارا پلاک ۲"></AddressBox>
+            <AddressBox srclink={GetImg(IconMedia3)} title="تهران تهران خیابان دارا پلاک ۲"></AddressBox>
           </div>
         </div>
       </div>

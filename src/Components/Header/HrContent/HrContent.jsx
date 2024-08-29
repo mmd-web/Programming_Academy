@@ -1,7 +1,13 @@
-import React from 'react'
+import React from 'react';
 import BtnMain from '../../BtnMain/BtnMain';
 import CardHr from './CardHr/CardHr';
-import './HrContent.css'
+import './HrContent.css';
+import GetImg from '../../GetImg/GetImg.jsx';
+import ImgHr from '../../../assets/images/hrImage/img_517335666206237e4d9.webp';
+import ImgCardHr1 from '../../../assets/images/hrImage/itemsImg/img_6640886661f153a221d.webp';
+import ImgCardHr2 from '../../../assets/images/hrImage/itemsImg/img_8471886661f151ced59.webp';
+import ImgCardHr3 from '../../../assets/images/hrImage/itemsImg/img_9057316661f155dd207.webp';
+import ImgCardHr4 from '../../../assets/images/hrImage/itemsImg/img_9081336661f14eddb67.webp';
 
 function HrContent() {
   return (
@@ -26,7 +32,7 @@ function HrContent() {
           </div>
           <div className="col-lg-6 d-lg-flex d-none justify-content-center align-items-center">
             <div>
-              <img src="src/assets/images/hrImage/img_517335666206237e4d9.webp" width={100} alt="" />
+              <img src={GetImg(ImgHr)} width={100} alt="" />
             </div>
           </div>
         </div>
@@ -34,16 +40,16 @@ function HrContent() {
       <div className='h_25 pb_items_box'>
         <div className='row h_maxContent row-gap-3'>
           <div className="col-xl-3 col-md-6 col-12 h-100">
-            <CardHr images="src/assets/images/hrImage/itemsImg/img_6640886661f153a221d.webp" count="6" colorText="#19BEEF" title="hello" ></CardHr>
+            <CardHr images={GetImg(ImgCardHr1)} count="6" colorText="#19BEEF" title="hello" ></CardHr>
           </div>
           <div className="col-xl-3 col-md-6 col-12 h-100">
-            <CardHr images="src/assets/images/hrImage/itemsImg/img_8471886661f151ced59.webp" count="10" colorText="#0ED3A3" title="hello" ></CardHr>
+            <CardHr images={GetImg(ImgCardHr2)} count="10" colorText="#0ED3A3" title="hello" ></CardHr>
           </div>
           <div className="col-xl-3 col-md-6 col-12 h-100">
-            <CardHr images="src/assets/images/hrImage/itemsImg/img_9057316661f155dd207.webp" count="30" colorText="#FFD701" title="hello" ></CardHr>
+            <CardHr images={GetImg(ImgCardHr3)} count="30" colorText="#FFD701" title="hello" ></CardHr>
           </div>
           <div className="col-xl-3 col-md-6 col-12 h-100">
-            <CardHr images="src/assets/images/hrImage/itemsImg/img_9081336661f14eddb67.webp" count="15" colorText="#7F1FFF" title="hello" ></CardHr>
+            <CardHr images={GetImg(ImgCardHr4)} count="15" colorText="#7F1FFF" title="hello" ></CardHr>
           </div>
         </div>
       </div>

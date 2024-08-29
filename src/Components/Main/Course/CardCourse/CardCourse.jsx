@@ -1,5 +1,8 @@
 import React from 'react'
 import Badge from './Badge/Badge';
+import GetImg from '../../../GetImg/GetImg.jsx';
+
+import IconStar from '../../../../assets/images/icon/icons8-star-96.png';
 
 function CardCourse({ ...props }) {
   return (
@@ -14,7 +17,7 @@ function CardCourse({ ...props }) {
           </div>
           <div className='w-100 d-flex justify-content-start align-items-center'>
             <span className='color_white_100 fs-6 d-flex justify-content-center align-items-center column-gap-1'>
-              <img src="src/assets/images/icon/icons8-star-96.png" className='w_icon_star' alt="" />
+              <img src={GetImg(IconStar)} className='w_icon_star' alt="" />
               {props.stars}
             </span>
           </div>
