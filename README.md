@@ -1,8 +1,30 @@
-# React + Vite
+<h1>A site for programming academy</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<hr>
 
-Currently, two official plugins are available:
+<h3>
+  <a href="https://66d0e9d2ceea5ca43e83a74e--graceful-kringle-726fcd.netlify.app/">review online</a>
+</h3>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<hr>
+
+<h2>tips</h2>
+
+- <span>All pages are fully responsive for all devices</span>
+- <span>This project is fully developed with react js library</span>
+- <span>React-bootstrap framework is used</span>
+- <span>AOC library is used</span>
+
+<h2>Technologies used</h2>
+
+- <span>html</span>
+- <span>css</span>
+- <span>javascript</span>
+
+<h2>Libraries used</h2>
+
+- <span>react js</span>
+
+<h2>Frameworks used</h2>
+
+- <span>react-bootstrap</span>
