@@ -1,9 +1,30 @@
-<h1>About</h1>
+<h1>A site for programming academy</h1>
+
+<hr>
 
 <h3>
-  <a href = "https://66d0e9d2ceea5ca43e83a74e--graceful-kringle-726fcd.netlify.app/">Sample project</a>
+  <a href="https://66d0e9d2ceea5ca43e83a74e--graceful-kringle-726fcd.netlify.app/">review online</a>
 </h3>
 
-<hr/>
+<hr>
 
-- <h4>An educational site for teaching programming, developed with react and react-bootsrap</h4>
+<h2>tips</h2>
+
+- <span>All pages are fully responsive for all devices</span>
+- <span>This project is fully developed with react js library</span>
+- <span>React-bootstrap framework is used</span>
+- <span>AOC library is used</span>
+
+<h2>Technologies used</h2>
+
+- <span>html</span>
+- <span>css</span>
+- <span>javascript</span>
+
+<h2>Libraries used</h2>
+
+- <span>react js</span>
+
+<h2>Frameworks used</h2>
+
+- <span>react-bootstrap</span>
