@@ -10,6 +10,18 @@ import IconMedia2 from '../../../assets/images/icon/IconMedia/ig-instagram-icon.
 import IconMedia3 from '../../../assets/images/icon/IconMedia/linkedin-app-icon.png';
 import ConnectionImg from '../../../assets/images/ConnectionImg/img_8989166661eb35db767.webp';
 
+let valueMediaIcon = [
+  {id : 1, srcImg : IconMedia1 , urlMedia : '///' },
+  {id : 2, srcImg : IconMedia2 , urlMedia : '///' },
+  {id : 3, srcImg : IconMedia3 , urlMedia : '///' },
+]
+
+let valueAddressBox = [
+  {id : 1, srcImg : IconMedia1 , title : 'تهران تهران خیابان دارا پلاک ۲' },
+  {id : 2, srcImg : IconMedia2 , title : 'تهران تهران خیابان دارا پلاک ۲' },
+  {id : 3, srcImg : IconMedia3 , title : 'تهران تهران خیابان دارا پلاک ۲' },
+]
+
 export default function Connection() {
   return (
     <div className='w-100 h-100 py-5 mt-3'>
@@ -28,18 +40,26 @@ export default function Connection() {
                     <span className='color_white_50 lh-lg fs_Connection_subtel'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</span>
                   </div>
                   <div className='d-flex flex-row column-gap-3 h-100'>
-                    <MediaIcon srclink={GetImg(IconMedia1)}></MediaIcon>
-                    <MediaIcon srclink={GetImg(IconMedia2)}></MediaIcon>
-                    <MediaIcon srclink={GetImg(IconMedia3)}></MediaIcon>
+                    {
+                      valueMediaIcon.map(item => {
+                        return(
+                          <MediaIcon key={item.id} srclink={GetImg(item.srcImg)}></MediaIcon>
+                        )
+                      })
+                    }
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-lg-6 col-12 d-flex flex-column row-gap-4 justify-content-end">
-            <AddressBox srclink={GetImg(IconMedia1)} title="تهران تهران خیابان دارا پلاک ۲"></AddressBox>
-            <AddressBox srclink={GetImg(IconMedia2)} title="تهران تهران خیابان دارا پلاک ۲"></AddressBox>
-            <AddressBox srclink={GetImg(IconMedia3)} title="تهران تهران خیابان دارا پلاک ۲"></AddressBox>
+            {
+              valueAddressBox.map(item => {
+                return(
+                  <AddressBox key={item.id} srclink={GetImg(item.srcImg)} title={item.title}></AddressBox>
+                )
+              })
+            }
           </div>
         </div>
       </div>

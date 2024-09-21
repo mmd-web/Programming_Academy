@@ -9,6 +9,13 @@ import ImgCardHr2 from '../../../assets/images/hrImage/itemsImg/img_8471886661f1
 import ImgCardHr3 from '../../../assets/images/hrImage/itemsImg/img_9057316661f155dd207.webp';
 import ImgCardHr4 from '../../../assets/images/hrImage/itemsImg/img_9081336661f14eddb67.webp';
 
+let cardHrValues = [
+  { id: 1, imgSrc: ImgCardHr1, color: '#19BEEF', title: 'hello', count: 6 },
+  { id: 2, imgSrc: ImgCardHr2, color: '#0ED3A3', title: 'hello', count: 10 },
+  { id: 4, imgSrc: ImgCardHr3, color: '#FFD701', title: 'hello', count: 30 },
+  { id: 5, imgSrc: ImgCardHr4, color: '#7F1FFF', title: 'hello', count: 15 },
+]
+
 function HrContent() {
   return (
     <div className='w-100 h-100 container'>
@@ -39,18 +46,15 @@ function HrContent() {
       </div>
       <div className='h_25 pb_items_box'>
         <div className='row h_maxContent row-gap-3'>
-          <div className="col-xl-3 col-md-6 col-12 h-100">
-            <CardHr images={GetImg(ImgCardHr1)} count="6" colorText="#19BEEF" title="hello" ></CardHr>
-          </div>
-          <div className="col-xl-3 col-md-6 col-12 h-100">
-            <CardHr images={GetImg(ImgCardHr2)} count="10" colorText="#0ED3A3" title="hello" ></CardHr>
-          </div>
-          <div className="col-xl-3 col-md-6 col-12 h-100">
-            <CardHr images={GetImg(ImgCardHr3)} count="30" colorText="#FFD701" title="hello" ></CardHr>
-          </div>
-          <div className="col-xl-3 col-md-6 col-12 h-100">
-            <CardHr images={GetImg(ImgCardHr4)} count="15" colorText="#7F1FFF" title="hello" ></CardHr>
-          </div>
+          {
+            cardHrValues.map(item => {
+              return (
+                <div key={item.id} className="col-xl-3 col-md-6 col-12 h-100">
+                  <CardHr images={GetImg(item.imgSrc)} count={item.count} colorText={item.color} title={item.title} ></CardHr>
+                </div>
+              )
+            })
+          }
         </div>
       </div>
     </div>
