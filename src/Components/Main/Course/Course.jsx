@@ -1,7 +1,7 @@
 import React from 'react'
 import CardCourse from './CardCourse/CardCourse';
 import TitlesMain from '../TitlesMain/TitlesMain';
-import { supabase } from '../../../API/supabase';
+import { supabase } from 'API/supabase';
 import './Course.css'
 class Course extends React.Component {
   constructor(props) {
