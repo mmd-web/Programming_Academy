@@ -18,5 +18,4 @@ function MainBox() {
     </div>
   )
 }
-
 export default MainBox;
