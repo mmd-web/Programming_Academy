@@ -10,7 +10,8 @@ class Course extends React.Component {
     super(props);
 
     this.state = {
-      products: []
+      products: [],
+      storageFiles: []
     }
 
     this.getProductList.bind(this);
@@ -33,13 +34,19 @@ class Course extends React.Component {
       .storage
       .from('files')
       .list('')
-    console.log(data)
+    this.setState({
+      storageFiles: data
+    })
     return data;
   }
 
   render() {
-    // this.state.products.map(item => console.log(item))
-
+    let Required = this.state.storageFiles.map(item => item).filter(img => {
+      return img.name.startsWith('course')
+    })
+    console.log(Required);
+    
+    
     return (
       <div className='py-5'>
         <TitlesMain title="دوره های آکادمی"></TitlesMain>
@@ -48,7 +55,7 @@ class Course extends React.Component {
             {this.state.products &&
               this.state.products.map(item =>
                 <div key={item.id} className="col-lg-3 col-md-4 col-12 d-md-flex d-none">
-                  {/* <CardCourse stars={3} src={GetImg(img1)} {...item}></CardCourse> */}
+                  <CardCourse stars={3} src={Required[item.id-1]} {...item}></CardCourse>
                 </div>
               )
             }
