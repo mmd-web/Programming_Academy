@@ -5,11 +5,6 @@ import { supabase } from '../../../API/supabase';
 import GetImg from '../../GetImg/GetImg';
 import './Course.css'
 
-import img1 from '../../../assets/images/imgCourse/img_23843466619bcd3a364.webp'
-import img2 from '../../../assets/images/imgCourse/img_54652366619bc6856dc.webp'
-import img3 from '../../../assets/images/imgCourse/img_73993966619bc0b4a65.webp'
-import img4 from '../../../assets/images/imgCourse/img_78061766619be7be94c.webp'
-
 class Course extends React.Component {
   constructor(props) {
     super(props);
@@ -53,7 +48,7 @@ class Course extends React.Component {
             {this.state.products &&
               this.state.products.map(item =>
                 <div key={item.id} className="col-lg-3 col-md-4 col-12 d-md-flex d-none">
-                  <CardCourse stars={3} src={GetImg(img1)} {...item}></CardCourse>
+                  {/* <CardCourse stars={3} src={GetImg(img1)} {...item}></CardCourse> */}
                 </div>
               )
             }
