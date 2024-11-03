@@ -5,13 +5,13 @@ import GetImg from '../../../GetImg/GetImg.jsx';
 import IconStar from '../../../../assets/images/icon/icons8-star-96.png';
 
 function CardCourse({ ...props  }) {
-  console.log(props.srcImg);
+  // console.log(props.srcImg);
   
   return (
     <a href='#' className='text-decoration-none mt-4'>
       <div className="card w-100 bg_main_two">
         <div className='w_img_box'>
-          <img src={props.srcImg} className="card-img-top w-100 h-100 object-fit-cover" alt="..." />
+          <img src={props.src} className="card-img-top w-100 h-100 object-fit-cover" alt="..." />
         </div>
         <div className="card-body py-4 w-100 d-flex row-gap-4 flex-column">
           <div className='w-100 d-flex justify-content-end align-items-center'>
