@@ -5,6 +5,8 @@ import { supabase } from '../../../API/supabase';
 import GetImg from '../../GetImg/GetImg';
 import './Course.css'
 
+import GetStorage , { RequiredData , saveRequired } from '../../../ConnectData/GetData';
+
 class Course extends React.Component {
   constructor(props) {
     super(props);
@@ -29,23 +31,12 @@ class Course extends React.Component {
     })
   }
 
-  async getStorage(){
-    const { data } = await supabase
-      .storage
-      .from('files')
-      .list('')
-    this.setState({
-      storageFiles: data
-    })
-    return data;
+  getStorage(){
+    GetStorage(this);
   }
 
   render() {
-    let Required = this.state.storageFiles.map(item => item).filter(img => {
-      return img.name.startsWith('course')
-    })
-    console.log(Required);
-    
+    RequiredData(this.state.storageFiles , 'course');
     
     return (
       <div className='py-5'>
@@ -55,7 +46,7 @@ class Course extends React.Component {
             {this.state.products &&
               this.state.products.map(item =>
                 <div key={item.id} className="col-lg-3 col-md-4 col-12 d-md-flex d-none">
-                  <CardCourse stars={3} src={Required[item.id-1]} {...item}></CardCourse>
+                  <CardCourse stars={3} src={saveRequired[item.id-1]} {...item}></CardCourse>
                 </div>
               )
             }
