@@ -2,7 +2,6 @@ import React from 'react'
 import CardCourse from './CardCourse/CardCourse';
 import TitlesMain from '../TitlesMain/TitlesMain';
 import { supabase } from '../../../API/supabase';
-import GetImg from '../../GetImg/GetImg';
 import './Course.css'
 
 import GetStorage , { RequiredData , saveRequired } from '../../../ConnectData/GetData';
