@@ -2,14 +2,6 @@ import React from 'react';
 import BtnMain from '../../BtnMain/BtnMain';
 import CardHr from './CardHr/CardHr';
 import './HrContent.css';
-import GetImg from '../../GetImg/GetImg.jsx';
-
-// let cardHrValues = [
-//   { id: 1, imgSrc: ImgCardHr1, color: '#19BEEF', title: 'hello', count: 6 },
-//   { id: 2, imgSrc: ImgCardHr2, color: '#0ED3A3', title: 'hello', count: 10 },
-//   { id: 4, imgSrc: ImgCardHr3, color: '#FFD701', title: 'hello', count: 30 },
-//   { id: 5, imgSrc: ImgCardHr4, color: '#7F1FFF', title: 'hello', count: 15 },
-// ]
 
 function HrContent() {
   return (
