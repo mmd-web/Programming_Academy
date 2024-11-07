@@ -1,16 +1,3 @@
-import { supabase } from "../API/supabase";
-
-export default async function GetStorage( state ){
-  const { data } = await supabase
-    .storage
-    .from('files')
-    .list('')
-    state.setState({
-      storageFiles: data
-    })
-  return data;
-}
-
 export let saveRequired ;
 
 export function RequiredData ( data , type ){

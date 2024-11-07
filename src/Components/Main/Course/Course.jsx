@@ -1,10 +1,9 @@
 import React from 'react'
 import CardCourse from './CardCourse/CardCourse';
 import TitlesMain from '../TitlesMain/TitlesMain';
-import { supabase } from '../../../API/supabase';
+import App from '../../../App';
+import {RequiredData , saveRequired} from '../../../ConnectData/GetData'
 import './Course.css'
-
-import GetStorage , { RequiredData , saveRequired } from '../../../ConnectData/GetData';
 
 class Course extends React.Component {
   constructor(props) {
@@ -12,31 +11,30 @@ class Course extends React.Component {
 
     this.state = {
       products: [],
-      storageFiles: []
+      storageFile : []
     }
-
-    this.getProductList.bind(this);
-    this.getProductList()
-    this.getStorage.bind(this);
-    this.getStorage()
+    this.callProductsTable.bind(this);
+    this.callProductsTable()
+    this.callStorageItem.bind(this);
+    this.callStorageItem()
   }
 
-  async getProductList() {
-    const { data } = await supabase
-      .from('products')
-      .select('*')
+  async callProductsTable(){
+    const productsData = await new App();
     this.setState({
-      products: data
+      products : await productsData.getProductList()
     })
   }
 
-  getStorage(){
-    GetStorage(this);
+  async callStorageItem(){
+    const storage = await new App()
+    this.setState({
+      storageFile : await storage.getStorage()
+    })
   }
 
   render() {
-    RequiredData(this.state.storageFiles , 'course');
-    
+    RequiredData(this.state.storageFile , 'course');
     return (
       <div className='py-5'>
         <TitlesMain title="دوره های آکادمی"></TitlesMain>
