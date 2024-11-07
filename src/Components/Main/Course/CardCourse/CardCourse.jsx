@@ -1,6 +1,8 @@
 import React from 'react'
 import Badge from './Badge/Badge';
 
+export let StorageAddres = `https://oaumvonsnkirsxzuaabl.supabase.co/storage/v1/object/public/files/`;
+
 class CardCourse extends React.Component {
   // console.log(props);
   constructor(props) {
@@ -28,7 +30,7 @@ class CardCourse extends React.Component {
         <div className="card w-100 bg_main_two">
           <div className='w_img_box'>
             {saveImg &&
-              <img src={`https://oaumvonsnkirsxzuaabl.supabase.co/storage/v1/object/public/files/${saveImg.name}`} className="card-img-top w-100 h-100 object-fit-cover" alt="..." />
+              <img src={`${StorageAddres}${saveImg.name}`} className="card-img-top w-100 h-100 object-fit-cover" alt="..." />
             }
           </div>
           <div className="card-body py-4 w-100 d-flex row-gap-4 flex-column">

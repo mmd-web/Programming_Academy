@@ -8,8 +8,6 @@ export default async function GetStorage( state ){
     state.setState({
       storageFiles: data
     })
-  console.log(data);
-  
   return data;
 }
 
@@ -19,7 +17,5 @@ export function RequiredData ( data , type ){
   saveRequired = data.map(item => item).filter(img => {
     return img.name.startsWith(type)
   })
-  console.log(saveRequired);
-  
   return saveRequired;
 }
