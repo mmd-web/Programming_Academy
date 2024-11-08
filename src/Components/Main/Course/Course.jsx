@@ -42,7 +42,7 @@ class Course extends React.Component {
           <div className="row">
             {this.state.products &&
               this.state.products.map(item =>
-                <div key={item.id} className="col-lg-3 col-md-4 col-12 d-md-flex d-none">
+                <div key={item.id} className="col-lg-3 col-md-4 col-12 mt-3">
                   <CardCourse stars={3} src={saveRequired[item.id-1]} {...item}></CardCourse>
                 </div>
               )
