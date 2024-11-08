@@ -24,14 +24,40 @@ class HrContent extends React.Component {
     })
   }
 
-  render() {
+  callRequiredDataForMainImgHr(){
     RequiredData(this.state.storageFile, 'header');
-    const data = saveRequired
-    let mainHrImg = data.filter(item => item.name.startsWith('header1'));
+    const data = saveRequired;
+    return data
+  }
+
+  callRequiredDataForImgHeaderData(){
+    RequiredData(this.state.storageFile, 'header2');
+    const data = saveRequired;
+    return data
+  }
+
+  render() {
+    let mainHrImg = this.callRequiredDataForMainImgHr().filter(item => item.name.startsWith('header1'));
+    let dataHrImg = this.callRequiredDataForImgHeaderData().filter(item => item.name.startsWith('header2'));
 
     function callMainHrImg(){
       if (mainHrImg) {
         return mainHrImg.map(item => `${StorageAddres}${item.name}`)
+      }else{
+        return false;
+      }
+    }
+
+    function callDataHrImg(){
+      if (dataHrImg) {
+        return dataHrImg.map(item => {
+          return (
+            <div key={item.id} className="col-xl-3 col-md-6 col-12 h-100">
+              {/* <CardHr images={GetImg(item.imgSrc)} count={item.count} colorText={item.color} title={item.title} ></CardHr> */}
+              <CardHr images={`${StorageAddres}${item.name}`}></CardHr>
+            </div>
+          )
+        })
       }else{
         return false;
       }
@@ -66,15 +92,7 @@ class HrContent extends React.Component {
         </div>
         <div className='h_25 pb_items_box'>
           <div className='row h_maxContent row-gap-3'>
-            {/* {
-              cardHrValues.map(item => {
-                return (
-                  <div key={item.id} className="col-xl-3 col-md-6 col-12 h-100">
-                    <CardHr images={GetImg(item.imgSrc)} count={item.count} colorText={item.color} title={item.title} ></CardHr>
-                  </div>
-                )
-              })
-            } */}
+            {callDataHrImg()}
           </div>
         </div>
       </div>
