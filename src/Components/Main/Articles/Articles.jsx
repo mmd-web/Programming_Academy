@@ -1,15 +1,7 @@
 import React from 'react'
 import TitlesMain from '../TitlesMain/TitlesMain'
 import ArticlesCard from './ArticlesCard/ArticlesCard'
-import GetImg from '../../GetImg/GetImg.jsx'
 import './Articles.css'
-
-// let valueArticlesCard = [
-//   { id: 1, srcImg: ArticlesImg1, title: 'طراحی UI', way: 'برنامه نویسی', date: '1403,خرداد' },
-//   { id: 2, srcImg: ArticlesImg2, title: 'طراحی UI', way: 'دیزاین', date: '1403,خرداد' },
-//   { id: 3, srcImg: ArticlesImg3, title: 'طراحی UI', way: 'برنامه نویسی', date: '1403,خرداد' },
-//   { id: 4, srcImg: ArticlesImg4, title: 'طراحی UI', way: 'دیزاین', date: '1403,خرداد' },
-// ]
 
 export default function Articles() {
   return (
