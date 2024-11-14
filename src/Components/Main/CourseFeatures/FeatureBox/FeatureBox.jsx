@@ -1,6 +1,8 @@
 import React from 'react'
 
 export default function FeatureBox({ ...props }) {
+  // console.log(props);
+  
   return (
     <div className='w-100 h-100 bg_main_two rounded-3 overflow-hidden d-flex justify-content-center'>
       <div className="row w-100 h-100 py-2">

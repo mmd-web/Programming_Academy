@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import TitlesMain from "../TitlesMain/TitlesMain";
 import App from "../../../App";
 import { StorageAddres } from "../Course/CardCourse/CardCourse";
-import { RequiredData, saveRequired } from "../../../ConnectData/GetData";
 import FeatureBox from './FeatureBox/FeatureBox'
 import './CourseFeatures.css'
 
@@ -39,6 +38,7 @@ export default class CourseFeatures extends Component {
   render() {
     let mainImg = this.state.featureImg.filter(item => item.name.startsWith('MainFeature'));
     let subImg = this.state.featureImg.filter(item => item.name.startsWith('Feature'));
+    let valueFeatureBox = this.state.valueFeatureBox.filter(item => item.type === 'cf');
 
     return (
       <div className="w-100 h-100 py-5">
@@ -54,10 +54,10 @@ export default class CourseFeatures extends Component {
             </div>
             <div className="col-lg-6 mt-lg-0 mt-4 col-12 d-flex py-3 align-items-center justify-content-center">
               <div className="row w-100 h-100 row-gap-4">
-                {subImg &&
-                  subImg.map(item =>
+                {valueFeatureBox &&
+                  valueFeatureBox.map(item =>
                     <div key={item.id} className="col-12">
-                      <FeatureBox srclink={`${StorageAddres}${item.name}`}></FeatureBox>
+                      <FeatureBox srclink={`${StorageAddres}${subImg[item.id - 5].name}`} {...item}></FeatureBox>
                     </div>
                   )
                 }
