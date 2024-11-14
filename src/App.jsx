@@ -13,6 +13,8 @@ class App extends React.Component {
     this.getGeneralTableList();
     this.getStorage.bind(this);
     this.getStorage();
+    this.getArticleTableList.bind(this);
+    this.getArticleTableList();
   }
 
   async getProductList() {
@@ -25,6 +27,13 @@ class App extends React.Component {
   async getGeneralTableList() {
     const { data } = await supabase
       .from('generalTable')
+      .select('*')
+    return data;
+  }
+
+  async getArticleTableList() {
+    const { data } = await supabase
+      .from('Article')
       .select('*')
     return data;
   }
