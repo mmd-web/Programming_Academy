@@ -3,17 +3,6 @@ import TitlesMain from "../TitlesMain/TitlesMain"
 import BoxImgDocs from './BoxImgDocs/BoxImgDocs'
 import './CountDocuments.css'
 
-// let valueBoxImgDocs = [
-//   { id: 1, srcImg: DocsImg1 },
-//   { id: 2, srcImg: DocsImg1 },
-//   { id: 3, srcImg: DocsImg1 },
-//   { id: 4, srcImg: DocsImg1 },
-//   { id: 5, srcImg: DocsImg1 },
-//   { id: 6, srcImg: DocsImg1 },
-//   { id: 7, srcImg: DocsImg1 },
-//   { id: 8, srcImg: DocsImg1 },
-// ]
-
 export default function CountDocuments() {
   return (
     <div className='w-100 h-100 py-5 mt-3'>
