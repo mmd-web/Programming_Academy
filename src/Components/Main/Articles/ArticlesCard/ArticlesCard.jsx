@@ -18,7 +18,7 @@ export default function ArticlesCard({ ...props }) {
                 {props.date}
               </span>
               <div className=''>
-                <Badge percentage={props.way}></Badge>
+                <Badge percentage={12}></Badge>
               </div>
             </div>
           </div>
