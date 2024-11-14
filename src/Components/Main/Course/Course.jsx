@@ -13,6 +13,9 @@ class Course extends React.Component {
       products: [],
       storageFile : []
     }
+
+    this.callAppComponent = new App();
+    
     this.callProductsTable.bind(this);
     this.callProductsTable()
     this.callStorageItem.bind(this);
@@ -20,16 +23,14 @@ class Course extends React.Component {
   }
 
   async callProductsTable(){
-    const productsData = await new App();
     this.setState({
-      products : await productsData.getProductList()
+      products : await this.callAppComponent.getProductList()
     })
   }
 
   async callStorageItem(){
-    const storage = await new App()
     this.setState({
-      storageFile : await storage.getStorage()
+      storageFile : await this.callAppComponent.getStorage()
     })
   }
 
