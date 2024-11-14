@@ -2,20 +2,7 @@ import React from 'react'
 import TitlesMain from '../TitlesMain/TitlesMain'
 import MediaIcon from './MediaIcon/MediaIcon'
 import AddressBox from './AddressBox/AddressBox'
-import GetImg from '../../GetImg/GetImg.jsx';
 import './Connection.css'
-
-// let valueMediaIcon = [
-//   {id : 1, srcImg : IconMedia1 , urlMedia : '///' },
-//   {id : 2, srcImg : IconMedia2 , urlMedia : '///' },
-//   {id : 3, srcImg : IconMedia3 , urlMedia : '///' },
-// ]
-
-// let valueAddressBox = [
-//   {id : 1, srcImg : IconMedia1 , title : 'تهران تهران خیابان دارا پلاک ۲' },
-//   {id : 2, srcImg : IconMedia2 , title : 'تهران تهران خیابان دارا پلاک ۲' },
-//   {id : 3, srcImg : IconMedia3 , title : 'تهران تهران خیابان دارا پلاک ۲' },
-// ]
 
 export default function Connection() {
   return (

@@ -39,7 +39,7 @@ export default class Articles extends React.Component {
     RequiredData(this.state.storageFile, 'Articles');
     return (
       <div className='w-100 h-100 py-5 mt-3'>
-        <TitlesMain title="تعدادی از مدارک اعطا شده"></TitlesMain>
+        <TitlesMain title="مقالات"></TitlesMain>
         <div className='w-100 h-100 mt-5'>
           <div className="row row-gap-4">
             {this.state.articlesData &&
