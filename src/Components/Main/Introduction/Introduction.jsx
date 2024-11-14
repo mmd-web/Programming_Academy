@@ -49,7 +49,6 @@ class Introduction extends React.Component {
             {this.state.products &&
               this.state.products.map(item =>
                 <div key={item.id} className="col-md-6 col-12">
-                  {console.log(saveRequired[item.id - 1])}
                   {item.id < saveRequired.length+1 ?
                     <IntBox src={saveRequired[item.id - 1]} {...item} {...this.state.colorBoxIntroduction[item.id - 1]}></IntBox>
                     : null
