@@ -15,6 +15,7 @@
 - <span>React-bootstrap framework is used</span>
 - <span>AOC library is used</span>
 - <span>The data of this site is called from a database with API requests</span>
+- <span>This project is built with OOP paradigm</span>
 
 <h2>Technologies used</h2>
 
