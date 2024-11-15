@@ -14,6 +14,7 @@
 - <span>This project is fully developed with react js library</span>
 - <span>React-bootstrap framework is used</span>
 - <span>AOC library is used</span>
+- <span>The data of this site is called from a database with API requests</span>
 
 <h2>Technologies used</h2>
 
