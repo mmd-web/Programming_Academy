@@ -26,7 +26,4 @@
 <h2>Libraries used</h2>
 
 - <span>react js</span>
-
-<h2>Frameworks used</h2>
-
 - <span>react-bootstrap</span>
