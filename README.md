@@ -3,7 +3,7 @@
 <hr>
 
 <h3>
-  <a href="https://66d0e9d2ceea5ca43e83a74e--graceful-kringle-726fcd.netlify.app/">review online</a>
+  <a href="https://programming-academy-chi.vercel.app/">review online</a>
 </h3>
 
 <hr>
