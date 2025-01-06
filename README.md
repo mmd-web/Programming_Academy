@@ -12,7 +12,7 @@
 
 - <span>All pages are fully responsive for all devices</span>
 - <span>This project is fully developed with react js library</span>
-- <span>React-bootstrap framework is used</span>
+- <span>react-bootstrap library is used</span>
 - <span>AOC library is used</span>
 - <span>The data of this site is called from a database with API requests</span>
 - <span>This project is built with OOP paradigm</span>
